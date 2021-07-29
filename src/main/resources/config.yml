@@ -1,0 +1,17 @@
+#  -------------------------------------------------------------
+#  |                   EntitySpawnCanceller                    |
+#  |                                                           |
+#  |                     Author : huda0209                     |
+#  |                     Depend :                              |
+#  | GitHub :                                                  |
+#  |  https://github.com/stella-server-mc/EntitySpawnCanceller |
+#  |                    ran by spigot 1.13                     |
+#  -------------------------------------------------------------
+
+#Enumerate Entity Types that you don't want to be spawned.
+#Be sure to write in capital letters.
+#If you want to check up the Entity Type, look this page.
+#https://papermc.io/javadocs/paper/1.13/org/bukkit/entity/EntityType.html
+
+SpawnCancelEntities :
+  - ZOMBIE_VILLAGER

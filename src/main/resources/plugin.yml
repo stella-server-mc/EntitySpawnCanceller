@@ -1,0 +1,27 @@
+name: EntitySpawnCanceller
+version: @version@
+main: com.github.huda0209.entityspawncanceller.EntitySpawnCanceller
+api-version: 1.13
+prefix: EntitySpawnCanceller
+authors: [ huda0209 ]
+commands:
+  esc:
+    description: EntitySpawnCanceller plugin command.
+    usage:
+      /<command> reload - Reload config.
+      /<command> addEntity <EntityType> - Add EntityType in SpawnCancelEntity.
+      /<command> removeEntity <EntityType> - Remove EntityType in SpawnCancelEntity.
+      /<command> setmode [true/false] - set enable or disable plugin function.
+permissions:
+  EntitySpawnCanceller.SetMode:
+    default: op
+  EntitySpawnCanceller.SpawnCancelEntity:
+    default: op
+  EntitySpawnCanceller.Reload:
+    default: op
+
+  EntitySpawnCanceller.*:
+    children:
+      EntitySpawnCanceller.SetMode: true
+      EntitySpawnCanceller.SpawnCancelEntity: true
+      EntitySpawnCanceller.Reload: true

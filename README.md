@@ -8,6 +8,12 @@
 `/esc removeEntity <EntityType>` : スポーンをキャンセルするエンティティを削除する。<br>
 `/esc reload` : このプラグインのコンフィグを再読み込みする。<br>
 
+## コンフィグ
+pluginsディレクトリに生成された`config.yml`を開き、SpawnCancelEntitiesに以下の方法でスポーンをキャンセルしたいエンティティを設定する。
+1. [org.bukkit.org/bukkit/entity/EntityType](https://papermc.io/javadocs/paper/1.13/org/bukkit/entity/EntityType.html)よりエンティティを見つける。
+2. エンティティ名を**大文字のまま**記憶する。
+3. `config.yml`の`SpawnCancelEntities`に配列で2で記憶したエンティティ名を設定する。
+
 ## 依存
 なし
 
